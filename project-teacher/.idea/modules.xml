@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/components/com.digiwes.teacher-components.iml" filepath="$PROJECT_DIR$/components/com.digiwes.teacher-components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/com.digiwes.teacher-features.iml" filepath="$PROJECT_DIR$/features/com.digiwes.teacher-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repository/com.digiwes.teacher-repository.iml" filepath="$PROJECT_DIR$/repository/com.digiwes.teacher-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/components/com.digiwes.teacher.baseinfo/com.digiwes.teacher.baseinfo.iml" filepath="$PROJECT_DIR$/components/com.digiwes.teacher.baseinfo/com.digiwes.teacher.baseinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-teacher.iml" filepath="$PROJECT_DIR$/project-teacher.iml" />
+    </modules>
+  </component>
+</project>

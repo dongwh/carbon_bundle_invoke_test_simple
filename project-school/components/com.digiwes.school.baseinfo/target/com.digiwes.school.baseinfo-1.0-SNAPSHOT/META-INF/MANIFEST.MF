@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1456902161200
+Build-Jdk: 1.8.0_45
+Built-By: dongwh
+Bundle-Activator: com.digiwes.test.activator.MainActivator
+Bundle-Description: Digiwes component description
+Bundle-DocURL: http://www.digiwes.com/
+Bundle-ManifestVersion: 2
+Bundle-Name: com.digiwes.school.baseinfo
+Bundle-SymbolicName: com.digiwes.school.baseinfo
+Bundle-Vendor: DIGIWES
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Import-Package: com.digiwes.test.teachermodel;version="[1.0,2)",com.digi
+ wes.test.teacherservice;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-3.0.0.201509101326

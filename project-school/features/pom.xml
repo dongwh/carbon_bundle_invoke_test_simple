@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.digiwes.test</groupId>
+        <artifactId>com.digiwes.school</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>com.digiwes.school-features</artifactId>
+    <packaging>pom</packaging>
+    <name>com.digiwes.school-features</name>
+    <url>http://www.digiwes.com</url>
+
+    <properties>
+        <version.p2.plugin>1.5.4</version.p2.plugin>
+        <version.school.version>1.0-SNAPSHOT</version.school.version>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.wso2.maven</groupId>
+                <artifactId>carbon-p2-plugin</artifactId>
+                <version>${version.p2.plugin}</version>
+                <executions>
+                    <execution>
+                        <id>4-p2-feature-generation</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>p2-feature-gen</goal>
+                        </goals>
+                        <configuration>
+                            <id>com.digiwes.school-features</id>
+                            <propertiesFile>./feature.properties</propertiesFile>
+                            <adviceFile>
+                                <properties>
+                                    <propertyDef>org.wso2.carbon.p2.category.type:server</propertyDef>
+                                    <propertyDef>org.eclipse.equinox.p2.type.group:true</propertyDef>
+                                </properties>
+                            </adviceFile>
+                            <bundles>
+                                <!--bundleDef>com.digiwes.baas:baas-catalog:${version.baas.catalog}</bundleDef-->
+                                <bundleDef>com.digiwes.test:com.digiwes.school.baseinfo:${version.school.version}</bundleDef>
+                            </bundles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

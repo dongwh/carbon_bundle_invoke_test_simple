@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1456904430960
+Build-Jdk: 1.8.0_45
+Built-By: dongwh
+Bundle-Description: Digiwes component description
+Bundle-DocURL: http://www.digiwes.com/
+Bundle-ManifestVersion: 2
+Bundle-Name: com.digiwes.student.baseinfo
+Bundle-SymbolicName: com.digiwes.student.baseinfo
+Bundle-Vendor: DIGIWES
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: com.digiwes.test.sudentmodel;version="1.0.0",com.digiwes
+ .test.studentservice;uses:="com.digiwes.test.sudentmodel";version="1.0.
+ 0"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-3.0.0.201509101326

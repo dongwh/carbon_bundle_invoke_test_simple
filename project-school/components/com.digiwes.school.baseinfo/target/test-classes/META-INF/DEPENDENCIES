@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+com.digiwes.school.baseinfo
+
+
+From: 'an unknown organization'
+  - com.digiwes.student.baseinfo  com.digiwes.test:com.digiwes.student.baseinfo:jar:1.0
+
+  - com.digiwes.teacher.baseinfo  com.digiwes.test:com.digiwes.teacher.baseinfo:jar:1.0
+
+  - org.osgi  org.osgi:org.osgi:jar:3.0.0
+
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.13
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Annotations for SCR (http://felix.apache.org/org.apache.felix.scr.annotations/) org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.12
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
